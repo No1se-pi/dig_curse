@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Биография — Цифровой куратор</title>
+<style>
+/* Общие стили для страницы */
+body {
+    margin :0 ;
+    padding :0 ;
+    font-family :'Arial', sans-serif ;
+    background-color:#121212 ;/* тёмный фон */
+    color:#fff ;
+    display:flex ;
+    flex-direction :column ;
+    align-items:center ;
+    justify-content:center ;
+    min-height :100vh ;
+}
+
+/* Контейнер для контента */
+.container {
+    width :90% ;
+    max-width :800px ;
+    padding :20px ;
+}
+
+/* Заголовки и параграфы с анимацией появления снизу вверх */
+h1, h2, p, ul {
+    opacity :0 ;
+    transform :translateY(20px) ;
+    animation :fadeInUp 1.5s forwards ;
+}
+
+h1 { 
+   animation-delay :0s ; 
+}
+h2 { 
+   animation-delay :0.3s ; 
+}
+p { 
+   animation-delay :0.6s ; 
+}
+ul { 
+   animation-delay :0.9s ; 
+}
+
+/* Список услуг с маркерами в стиле диска или кружка (по желанию) */
+
+ul {
+   list-style-type :circle ;
+}
+
+/* Анимация появления снизу вверх (ключевые кадры) */
+
+@keyframes fadeInUp {
+   from { opacity :0 ; transform :translateY(20px) ; }
+   to { opacity :1 ; transform :translateY(0) ; }
+}
+
+/* Кнопка возврата на главную страницу */
+
+.back-btn {
+   display:inline-block ;
+   margin-top :30px ;
+   padding :12px 24px ;
+   background-color:#444 ;
+   color:#fff ;
+   border-radius :5px ;
+   text-decoration:none ;
+   transition :background-color 0.3s , transform 0.3s ;
+}
+.back-btn:hover {
+   background-color:#666 ;
+   transform :translateY(-2px) ;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Биография</h1>
+
+<h2>Образование и достижения</h2>
+<p>Я получил образование в области цифровых технологий и работаю в сфере более 10 лет.</p>
+
+<h2>Опыт работы</h2>
+<p>Работал с крупными компаниями по разработке стратегий и управлению проектами.</p>
+
+<h2>Услуги куратора</h2>
+<ul>
+<li>Персональные консультации по развитию бизнеса</li>
+<li>Создание цифровых стратегий</li>
+<li>Обучающие программы и воркшопы</li>
+<li>Поддержка проектов в социальных сетях</li>
+</ul>
+
+<!-- Можно добавить фотографии или анимацию изображений -->
+
+<!-- Кнопка возврата на главную страницу -->
+<a href="index.html" class="back-btn">Вернуться на главную</a>
+
+</div>
+
+</body>
+</html>
